@@ -31,7 +31,6 @@ function App() {
       <div className="parameter">
         <label className="parameterText">Width</label>
         <input
-          id="Width"
           value={width}
           onChange={(e) => {
             setWidth(e.target.value);
@@ -41,7 +40,6 @@ function App() {
       <div className="parameter">
         <label className="parameterText">Height</label>
         <input
-          id="Height"
           value={height}
           onChange={(e) => {
             setHeight(e.target.value);
@@ -53,10 +51,9 @@ function App() {
         <label className="parameterText">Blur</label>
         <input
           type="number"
-          id="tentacles"
-          name="tentacles"
           min="1"
           max="10"
+          value={blur}
           onChange={(e) => {
             setBlur(e.target.value);
           }}
