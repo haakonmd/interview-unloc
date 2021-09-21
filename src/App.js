@@ -37,6 +37,7 @@ function App() {
           }}
         />
       </div>
+
       <div className="parameter">
         <label className="parameterText">Height</label>
         <input
@@ -78,8 +79,13 @@ function App() {
       >
         <label className="buttonText">Get picture</label>
       </button>
+
       <div className="button">
-        <img src={ref} className="center" />
+        <img
+          src={ref}
+          className="center"
+          alt="Error, try using valid parameters (Width and height must have a positive value and blur must be between 1 and 10)"
+        />
       </div>
     </div>
   );
